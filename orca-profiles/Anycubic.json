@@ -1,0 +1,42 @@
+{
+    "name": "Anycubic",
+    "version":  "01.01.00.01",
+    "force_update": "0",
+    "description": "Anycubic Kossel pack",
+    "machine_model_list": [
+	    {
+            "name": "Anycubic Kossel Linear Plus",
+            "sub_path": "machine/Anycubic Kossel Linear Plus.json"
+        }
+    ],
+    "process_list": [
+        {
+            "name": "0.12mm Extra-fine",
+            "sub_path": "process/0.12mm Extra-fine.json"
+        },
+        {
+            "name": "0.20mm Normal",
+            "sub_path": "process/0.20mm Normal.json"
+        },
+        {
+            "name": "0.30mm Draft",
+            "sub_path": "process/0.30mm Draft.json"
+        },
+        {
+            "name": "0.32mm Rough Draft",
+            "sub_path": "process/0.32mm Rough Draft.json"
+        }
+    ],
+    "filament_list": [
+        {
+            "name": "Generic unbranded PLA",
+            "sub_path": "filament/Generic unbranded PLA.json"
+        }
+    ],
+    "machine_list": [
+        {
+            "name": "Anycubic Kossel Linear Plus 0.4 nozzle",
+            "sub_path": "machine/Anycubic Kossel Linear Plus 0.4 nozzle.json"
+        }
+    ]
+}

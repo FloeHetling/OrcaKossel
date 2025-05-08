@@ -1,0 +1,309 @@
+{
+    "version": "2.3.0.3",
+    "type": "machine",
+    "from": "User",
+	"setting_id": "ACLP04",
+    "printer_model": "Anycubic Kossel Linear Plus",
+    "name": "Anycubic Kossel Linear Plus 0.4 nozzle",
+    "printer_settings_id": "Anycubic Kossel Linear Plus 0.4 nozzle",
+    "printer_variant": "0.4",
+	"instantiation": "true",
+    "default_filament_profile": [
+        "Generic unbranded PLA"
+    ],
+    "default_print_profile": "0.20mm Normal ",
+    "printer_structure": "delta",
+    "printer_technology": "FFF",
+    "printer_notes": "",
+    "host_type": "octoprint",
+    "print_host": "192.168.192.159",
+    "print_host_webui": "",
+    "gcode_flavor": "klipper",
+    "adaptive_bed_mesh_margin": "0",
+    "auxiliary_fan": "1",
+    "bbl_use_printhost": "0",
+    "bed_exclude_area": [
+        "0x0"
+    ],
+    "bed_mesh_max": "94.99,110",
+    "bed_mesh_min": "-90,-89.99",
+    "bed_mesh_probe_distance": "15,15",
+    "before_layer_change_gcode": "",
+    "best_object_pos": "0.5,0.5",
+    "change_extrusion_role_gcode": "",
+    "change_filament_gcode": "PAUSE\n",
+    "cooling_tube_length": "5",
+    "cooling_tube_retraction": "91.5",
+    "deretraction_speed": [
+        "30"
+    ],
+    "disable_m73": "0",
+    "emit_machine_limits_to_gcode": "0",
+    "enable_filament_ramming": "0",
+    "enable_long_retraction_when_cut": "0",
+    "extra_loading_move": "-2",
+    "extruder_clearance_height_to_lid": "140",
+    "extruder_clearance_height_to_rod": "36",
+    "extruder_clearance_radius": "55",
+    "extruder_colour": [
+        "#018001"
+    ],
+    "extruder_offset": [
+        "0x0"
+    ],
+    "fan_kickstart": "0.2",
+    "fan_speedup_overhangs": "1",
+    "fan_speedup_time": "5",
+    "head_wrap_detect_zone": [],
+    "high_current_on_filament_swap": "0",
+    "inherits": "",
+    "is_custom_defined": "0",
+    "layer_change_gcode": "",
+    "long_retractions_when_cut": [
+        "0"
+    ],
+    "machine_end_gcode": "; ---- Kossel end ----\nM117 Finishing...\nM104 S0\nM106 S0\nM140 S0\nG91\nG1 E-5 F1800\nG1 Z10 F3600\nG90\nG28\nM84\nM117 Ready!\n; ---------------------",
+    "machine_load_filament_time": "0",
+    "machine_max_acceleration_e": [
+        "3000",
+        "5000"
+    ],
+    "machine_max_acceleration_extruding": [
+        "3000",
+        "1250"
+    ],
+    "machine_max_acceleration_retracting": [
+        "3000",
+        "1250"
+    ],
+    "machine_max_acceleration_travel": [
+        "4000",
+        "1250"
+    ],
+    "machine_max_acceleration_x": [
+        "1000",
+        "960"
+    ],
+    "machine_max_acceleration_y": [
+        "1000",
+        "960"
+    ],
+    "machine_max_acceleration_z": [
+        "250",
+        "200"
+    ],
+    "machine_max_jerk_e": [
+        "0",
+        "4.5"
+    ],
+    "machine_max_jerk_x": [
+        "0",
+        "8"
+    ],
+    "machine_max_jerk_y": [
+        "0",
+        "8"
+    ],
+    "machine_max_jerk_z": [
+        "0",
+        "0.4"
+    ],
+    "machine_max_speed_e": [
+        "60",
+        "120"
+    ],
+    "machine_max_speed_x": [
+        "200",
+        "100"
+    ],
+    "machine_max_speed_y": [
+        "200",
+        "100"
+    ],
+    "machine_max_speed_z": [
+        "200",
+        "12"
+    ],
+    "machine_min_extruding_rate": [
+        "0",
+        "0"
+    ],
+    "machine_min_travel_rate": [
+        "0",
+        "0"
+    ],
+    "machine_pause_gcode": "PAUSE\n",
+    "machine_start_gcode": "; ---- Kossel Linear Plus start ----\nM117 Initializing...\nM104 S[nozzle_temperature_initial_layer]\nM140 S[bed_temperature_initial_layer]\nG21\nG90\nM82\nM107\nG28\n\nM117 Warming up...\nM190 S[bed_temperature_initial_layer]\nM109 S[nozzle_temperature_initial_layer]\n\n; ---------- Prime blob & wipe line (v3) ----------\nBED_MESH_PROFILE LOAD=default\nM117 Priming...\nG1 Z5 F3000\nG1 X-65 Y-65 F6000\nG1 Z0.50 F300\n\nG92 E0\nG1 E14 F150\nG1 X-5 Y-65 E3 F600\nG92 E0\nG1 Z1 F300\nG1 X0 Y-40 F6000\nG1 Z0.30 F300\n; ---------- print starts next -------------------\nM117 Printing...\n",
+    "machine_tool_change_time": "0",
+    "machine_unload_filament_time": "0",
+    "manual_filament_change": "0",
+    "max_layer_height": [
+        "0.32"
+    ],
+    "min_layer_height": [
+        "0.12"
+    ],
+    "nozzle_diameter": [
+        "0.4"
+    ],
+    "nozzle_height": "2.5",
+    "nozzle_hrc": "0",
+    "nozzle_type": "brass",
+    "nozzle_volume": "0",
+    "parking_pos_retraction": "92",
+    "pellet_modded_printer": "0",
+    "preferred_orientation": "0",
+    "printable_area": [
+        "119.543x10.4587",
+        "118.177x20.8378",
+        "115.911x31.0583",
+        "112.763x41.0424",
+        "108.757x50.7142",
+        "103.923x60",
+        "98.2982x68.8292",
+        "91.9253x77.1345",
+        "84.8528x84.8528",
+        "77.1345x91.9253",
+        "68.8292x98.2982",
+        "60x103.923",
+        "50.7142x108.757",
+        "41.0424x112.763",
+        "31.0583x115.911",
+        "20.8378x118.177",
+        "10.4587x119.543",
+        "7.34788e-15x120",
+        "-10.4587x119.543",
+        "-20.8378x118.177",
+        "-31.0583x115.911",
+        "-41.0424x112.763",
+        "-50.7142x108.757",
+        "-60x103.923",
+        "-68.8292x98.2982",
+        "-77.1345x91.9253",
+        "-84.8528x84.8528",
+        "-91.9253x77.1345",
+        "-98.2982x68.8292",
+        "-103.923x60",
+        "-108.757x50.7142",
+        "-112.763x41.0424",
+        "-115.911x31.0583",
+        "-118.177x20.8378",
+        "-119.543x10.4587",
+        "-120x1.46958e-14",
+        "-119.543x-10.4587",
+        "-118.177x-20.8378",
+        "-115.911x-31.0583",
+        "-112.763x-41.0424",
+        "-108.757x-50.7142",
+        "-103.923x-60",
+        "-98.2982x-68.8292",
+        "-91.9253x-77.1345",
+        "-84.8528x-84.8528",
+        "-77.1345x-91.9253",
+        "-68.8292x-98.2982",
+        "-60x-103.923",
+        "-50.7142x-108.757",
+        "-41.0424x-112.763",
+        "-31.0583x-115.911",
+        "-20.8378x-118.177",
+        "-10.4587x-119.543",
+        "-2.20436e-14x-120",
+        "10.4587x-119.543",
+        "20.8378x-118.177",
+        "31.0583x-115.911",
+        "41.0424x-112.763",
+        "50.7142x-108.757",
+        "60x-103.923",
+        "68.8292x-98.2982",
+        "77.1345x-91.9253",
+        "84.8528x-84.8528",
+        "91.9253x-77.1345",
+        "98.2982x-68.8292",
+        "103.923x-60",
+        "108.757x-50.7142",
+        "112.763x-41.0424",
+        "115.911x-31.0583",
+        "118.177x-20.8378",
+        "119.543x-10.4587",
+        "120x-2.93915e-14"
+    ],
+    "printable_height": "235",
+    "printhost_apikey": "",
+    "printhost_authorization_type": "key",
+    "printhost_cafile": "",
+    "printhost_password": "",
+    "printhost_port": "",
+    "printhost_ssl_ignore_revoke": "0",
+    "printhost_user": "",
+    "printing_by_object_gcode": "",
+    "purge_in_prime_tower": "0",
+    "retract_before_wipe": [
+        "70%"
+    ],
+    "retract_length_toolchange": [
+        "0"
+    ],
+    "retract_lift_above": [
+        "0"
+    ],
+    "retract_lift_below": [
+        "0"
+    ],
+    "retract_lift_enforce": [
+        "All Surfaces"
+    ],
+    "retract_on_top_layer": [
+        "1"
+    ],
+    "retract_restart_extra": [
+        "0"
+    ],
+    "retract_restart_extra_toolchange": [
+        "0"
+    ],
+    "retract_when_changing_layer": [
+        "1"
+    ],
+    "retraction_distances_when_cut": [
+        "18"
+    ],
+    "retraction_length": [
+        "4"
+    ],
+    "retraction_minimum_travel": [
+        "5"
+    ],
+    "retraction_speed": [
+        "40"
+    ],
+    "scan_first_layer": "0",
+    "silent_mode": "0",
+    "single_extruder_multi_material": "0",
+    "support_air_filtration": "0",
+    "support_chamber_temp_control": "0",
+    "support_multi_bed_types": "0",
+    "template_custom_gcode": "",
+    "thumbnails": "48x48/PNG, 300x300/PNG",
+    "thumbnails_format": "PNG",
+    "time_cost": "0",
+    "time_lapse_gcode": "TIMELAPSE_TAKE_FRAME\n",
+    "travel_slope": [
+        "3"
+    ],
+    "upward_compatible_machine": [],
+    "use_firmware_retraction": "0",
+    "use_relative_e_distances": "1",
+    "wipe": [
+        "0"
+    ],
+    "wipe_distance": [
+        "1"
+    ],
+    "z_hop": [
+        "0.4"
+    ],
+    "z_hop_types": [
+        "Normal Lift"
+    ],
+    "z_offset": "0"
+}
